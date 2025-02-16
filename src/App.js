@@ -10,6 +10,11 @@ import ParentComp from "./components/pureComponents/ParentComp"
 import ParentCompMemo from "./components/react.memo/ParentComp"
 import RefComp from "./components/refs-class/RefComp"
 import ParentCompoRef from "./components/usingRefFocusChildCompFromParentInClassCompo/ParentCompo"
+import ClickCounter from "./components/hoc/ClickCounter"
+import HoverCounter from "./components/hoc/HoverCounter"
+import CompA from "./components/context-api-class/CompoA"
+import { UserProvider } from "./components/context-api-class/Context"
+
 
 
 // This is called stateless component
@@ -17,7 +22,12 @@ const App = () => {
 
   return (
     <div>
-      <ParentCompoRef />
+      <UserProvider value="Pavan">
+        <CompA />
+      </UserProvider>
+      {/* <ClickCounter name="pavan" />
+      <HoverCounter /> */}
+      {/* <ParentCompoRef /> */}
       {/* <RefComp /> */}
       {/* <ParentCompMemo/> */}
       {/* <ParentComp /> */}
