@@ -27,7 +27,7 @@ const HocComponent = (OriginalComponent) => {
                 <OriginalComponent
                     count={this.state.count}
                     increCounter={this.increCounter}
-                    {...this.props}  /* This passes the remaining props from other components. Wherever we wrap the HOC, those props are forwarded to the wrapped component.*/
+                    {...this.props}  /* This passes the remaining props from other class-components. Wherever we wrap the HOC, those props are forwarded to the wrapped component.*/
                 />
             )
         }
