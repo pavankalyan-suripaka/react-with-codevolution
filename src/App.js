@@ -14,6 +14,16 @@ import ClickCounter from "./class-components/hoc/ClickCounter"
 import HoverCounter from "./class-components/hoc/HoverCounter"
 import CompA from "./class-components/context-api-class/CompoA"
 import { UserProvider } from "./class-components/context-api-class/Context"
+import ObjectUseState from "./functional-components/hooks/use-state/Object"
+import MouseEvents from "./functional-components/hooks/use-effect/MouseEvents"
+import Index from "./functional-components/hooks/use-effect/Index"
+import Timer from "./functional-components/hooks/use-effect/Timer"
+import CounterOne from "./functional-components/hooks/use-reducer/CounterOne"
+import CounterTwo from "./functional-components/hooks/use-reducer/CounterTwo"
+import CounterThree from "./functional-components/hooks/use-reducer/CounterThree"
+import FetchApi from "./functional-components/hooks/use-reducer/FetchApi"
+import FetchAPI from "./functional-components/hooks/use-state/FetchAPI"
+
 
 
 
@@ -22,9 +32,19 @@ const App = () => {
 
   return (
     <div>
-      <UserProvider value="Pavan">
+
+      <FetchAPI />
+      {/* <FetchApi /> */}
+      {/* <CounterThree /> */}
+      {/* <CounterTwo /> */}
+      {/* <CounterOne /> */}
+      {/* <Timer /> */}
+      {/* <Index /> */}
+      {/* <MouseEvents /> */}
+      {/* <ObjectUseState/> */}
+      {/* <UserProvider value="Pavan">
         <CompA />
-      </UserProvider>
+      </UserProvider> */}
       {/* <ClickCounter name="pavan" />
       <HoverCounter /> */}
       {/* <ParentCompoRef /> */}
