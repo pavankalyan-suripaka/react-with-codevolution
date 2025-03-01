@@ -9,7 +9,7 @@ const FetchAPI = () => {
 
     const fetchPosts = async () => {
         try {
-            const response = await axios.get("https://jsonplaceholder.typico.com/posts");
+            const response = await axios.get("https://jsonplaceholder.typicode.com/posts");
             setPosts(response.data);
             setLoading(false);
             setError('')

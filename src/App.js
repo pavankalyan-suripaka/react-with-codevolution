@@ -23,6 +23,15 @@ import CounterTwo from "./functional-components/hooks/use-reducer/CounterTwo"
 import CounterThree from "./functional-components/hooks/use-reducer/CounterThree"
 import FetchApi from "./functional-components/hooks/use-reducer/FetchApi"
 import FetchAPI from "./functional-components/hooks/use-state/FetchAPI"
+import CounterA from "./functional-components/hooks/use-reducer/conters/CounterA"
+import ParentComponent from "./functional-components/hooks/use-callback/ParentComponent"
+import Counter from "./functional-components/hooks/use-memo/Counter"
+import FocusInput from "./functional-components/hooks/use-ref/FocusInput"
+import HookTimer from "./functional-components/hooks/use-ref/HookTimer"
+import UseCounterOne from "./functional-components/custom-hooks/components/CounterOne"
+import UseCounterTwo from "./functional-components/custom-hooks/components/CounterTwo"
+import UseCounterThree from "./functional-components/custom-hooks/components/CounterThree"
+import UserForms from "./functional-components/custom-hooks/components/UserForms"
 
 
 
@@ -33,7 +42,16 @@ const App = () => {
   return (
     <div>
 
-      <FetchAPI />
+      <UserForms />
+      {/* <UseCounterThree /> */}
+      {/* <UseCounterOne />
+      <UseCounterTwo /> */}
+      {/* <HookTimer/> */}
+      {/* <FocusInput /> */}
+      {/* <Counter /> */}
+      {/* <ParentComponent /> */}
+      {/* <CounterA /> */}
+      {/* <FetchAPI /> */}
       {/* <FetchApi /> */}
       {/* <CounterThree /> */}
       {/* <CounterTwo /> */}
