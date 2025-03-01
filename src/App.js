@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { CounterProvider } from "./components/context-optimization/CountProvider";
+import Parent from "./components/context-optimization/Parent";
+import ParentComp from "./components/incorrect-optimization/ParentComp";
+import UseReducer from "./components/use-reducer/UseReducer";
+import ArrayUseState from "./components/useState/ArrayUseState";
+import ObjectUseState from "./components/useState/ObjectUseState";
+import UseState from "./components/useState/UseState";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <CounterProvider>
+        <Parent />
+      </CounterProvider>
+      {/* <ParentComp /> */}
+      {/* <ArrayUseState /> */}
+      {/* <ObjectUseState /> */}
+      {/* <UseReducer /> */}
+      {/* <UseState /> */}
     </div>
   );
 }
